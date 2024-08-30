@@ -1,0 +1,783 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="804,768.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Excel dosyasındaki İl,İlçe,Minimum Değer ve Maximum Değer sütunlarındaki value ları Sahibinden.com sitesine giriş yaptıktan ve Konut a tıkladıktan sonra Kiralık seçeneğini seçtim ve ilgili alanları doldurdum. Ara butonu ile value ları Kiralık altında arattım. Eğer ilan var ise taradım. İlanın olmaması durumunu da kontol ettim. Çıkan sonuçlarda maximum 50 ilan içermesi ve fiyatlarının artan şekilde sıralanmasını Linq da kod yazarak sağladım. Oluşan tabloyu excele çıktı olarak verdim." DisplayName="Main Sequence Sahibinden.com Project" sap:VirtualizedContainerService.HintSize="512,704" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="str_ExcelPath" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_ExcelData" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_ExcelKiralık" />
+      <Variable x:TypeArguments="x:String" Name="str_Il" />
+      <Variable x:TypeArguments="x:Boolean" Name="click_Konut" />
+      <Variable x:TypeArguments="x:Boolean" Name="click_Kiralık" />
+      <Variable x:TypeArguments="x:Boolean" Name="isKiralıkClick" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_İlanlar" />
+      <Variable x:TypeArguments="x:String" Name="str_MinimumDeger" />
+      <Variable x:TypeArguments="x:String" Name="str_Ilce" />
+      <Variable x:TypeArguments="x:Boolean" Name="ilan_Bulundu" />
+      <Variable x:TypeArguments="x:String" Name="str_Ilanlar" />
+      <Variable x:TypeArguments="x:String" Name="str_MaksimumDeger" />
+      <Variable x:TypeArguments="x:String" Name="str_ExcelSiralanmis" />
+      <Variable x:TypeArguments="x:Boolean" Name="exist_Popup" />
+      <Variable x:TypeArguments="x:Boolean" Name="exists_IlanVer" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Exceli okuma" sap:VirtualizedContainerService.HintSize="449.6,345.6" sap2010:WorkflowViewState.IdRef="Sequence_27">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ReadRange AddHeaders="True" DataTable="{x:Null}" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="387.2,120" sap2010:WorkflowViewState.IdRef="ReadRange_3" Password="{x:Null}" Range="{x:Null}" SheetName="Sayfa1" WorkbookPath="C:\Users\GAMZE\Desktop\İlanlar.xlsx" />
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,136.8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign DisplayName="Assign Excel Path" sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[str_ExcelPath]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">C:\Users\GAMZE\Desktop\İlanlar.xlsx</InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+          </Sequence>
+        </ui:CommentOut.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:CommentOut>
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="387.2,48" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,200">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_ExcelData]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="353.6,111.2" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sayfa1" WorkbookPath="[str_ExcelPath]" />
+          </Sequence>
+        </ui:CommentOut.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:CommentOut>
+    </Sequence>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_17">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_11">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[str_ExcelSiralanmis]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">C:\Users\GAMZE\Desktop\Sıralanmışİlanlar.xlsx</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,200" sap2010:WorkflowViewState.IdRef="Sequence_18">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_Siralanmisİlanlar]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="353.6,111.2" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="1. İlan" WorkbookPath="[str_ExcelSiralanmis]" />
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="449.6,48" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,136.8">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="Sahibinden sitesine giriş ve işlemler" sap:VirtualizedContainerService.HintSize="449.6,48" sap2010:WorkflowViewState.IdRef="Sequence_28">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard sap2010:Annotation.AnnotationText="sahibinden.com sitesini açıp properties ten maximize, open seçeneği always, close seçeneğini never seçtim. " AttachMode="SingleWindow" CloseMode="Never" DisplayName="Use Browser Chrome: sahibinden.com" sap:VirtualizedContainerService.HintSize="641.6,6171.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="False" OpenMode="Always" ScopeGuid="216d29a1-f655-4bbb-acd8-76c599b081d6" Version="V2" WindowResize="Maximize">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="608,5900" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:UiElementExists DisplayName="Element Exists 'İlan Ver' Var mı" Exists="[exists_IlanVer]" sap:VirtualizedContainerService.HintSize="545.6,139.2" sap2010:WorkflowViewState.IdRef="UiElementExists_6">
+                      <ui:UiElementExists.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="32042702-8962-4ce4-b635-5675d3abb435" InformativeScreenshot="95b3479965d055aad054a748b15994eb" Selector="&lt;html app='chrome.exe' url='https://www.sahibinden.com/' /&gt;&lt;webctrl uipath-html-title='?cretsiz* ?lan Ver' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:UiElementExists.Target>
+                    </ui:UiElementExists>
+                    <If Condition="[exists_IlanVer]" DisplayName="If Sayfa Açıldı mı Kontrolü" sap:VirtualizedContainerService.HintSize="545.6,56.8" sap2010:WorkflowViewState.IdRef="If_5">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,256" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,167.2" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;sayfa açıldı&quot;]" />
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,202.4" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Throw Exception="[new SystemException(&quot;sayfa açılamadı&quot;)]" sap:VirtualizedContainerService.HintSize="353.6,113.6" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Konut'" sap:VirtualizedContainerService.HintSize="545.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="216d29a1-f655-4bbb-acd8-76c599b081d6" Timeout="10" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/" CVScreenId="a980e5b0-6176-46b7-a61a-3e47ea184fff" CvTextArea="305, 971, 46, 15" CvTextArgument="Konut" CvType="Text" DesignTimeRectangle="305, 904, 46, 21" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl href='/kategori/emlak-konut' uipath-html-title='Konut' visibleinnertext='Konut' aaname='*Konut' innertext='*Konut' /&gt;" FuzzySelectorArgument="&lt;webctrl href='/kategori/emlak-konut' uipath-html-title='Konut' visibleinnertext='Konut' aaname='*Konut' innertext='*Konut' tag='A' type='' class='' check:text='Konut' /&gt;" Guid="9f742d6b-2171-46b9-8254-58a6a4868268" InformativeScreenshot="f4abdea1e4c15b7dccfd6f552dc06e84.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.sahibinden.com/' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Kiralık'" sap:VirtualizedContainerService.HintSize="545.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_26" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="216d29a1-f655-4bbb-acd8-76c599b081d6" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/kategori/emlak-konut" CVScreenId="c728945a-c75c-4923-a21e-c38e5e5c01c9" CvTextArea="259, 359, 48, 15" CvTextArgument="Kiralik" CvType="Text" DesignTimeRectangle="260, 291, 47, 21" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl innertext='Kiral?k' visibleinnertext='Kiral?k' aaname='Kiral?k' idx='*' /&gt;" FuzzySelectorArgument="&lt;webctrl innertext='Kiral?k' visibleinnertext='Kiral?k' aaname='Kiral?k' tag='H2' type='' class='' check:text='Kiralık' /&gt;" Guid="95308035-e0fc-45f2-a6bb-e8bee858c708" InformativeScreenshot="7ac46b11af20203584d821802f1a20dd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.sahibinden.com/kategori/emlak-konut' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_ExcelData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="545.6,5112.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                      <ui:ForEachRow.Body>
+                        <ActivityAction x:TypeArguments="sd:DataRow">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,4915.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="449.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[str_Il]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[CurrentRow("İl").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="449.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[str_Ilce]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[CurrentRow("İlçe").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="449.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[str_MinimumDeger]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[CurrentRow("Minimum Değer").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="449.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_6">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[str_MaksimumDeger]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[CurrentRow("Maximum Değer").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="449.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_8">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[str_Ilanlar]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[CurrentRow("#").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:UiElementExists DisplayName="Element Exists 'Popup'" Exists="[exist_Popup]" sap:VirtualizedContainerService.HintSize="449.6,139.2" sap2010:WorkflowViewState.IdRef="UiElementExists_7">
+                              <ui:UiElementExists.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9ce69102-2098-4e3d-9ed5-ca096104894d" InformativeScreenshot="ead6565a998333a571c6fcece39e8c66" Selector="&lt;webctrl class='splash-user-last-search' tag='SPAN' /&gt;">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:UiElementExists.Target>
+                            </ui:UiElementExists>
+                            <If Condition="[exist_Popup]" DisplayName="If Poup Varsa" sap:VirtualizedContainerService.HintSize="449.6,580.8" sap2010:WorkflowViewState.IdRef="If_6">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If.Then>
+                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,305.6" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Kiralık'" sap:VirtualizedContainerService.HintSize="353.6,216.8" sap2010:WorkflowViewState.IdRef="NClick_28" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="216d29a1-f655-4bbb-acd8-76c599b081d6" Version="V3">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/kategori/emlak-konut" DesignTimeRectangle="260, 291, 47, 21" DesignTimeScaleFactor="1.25" ElementType="List" FullSelectorArgument="&lt;webctrl tag='A' href='/kiralik' uipath-html-title='Kiralık' visibleinnertext='Kiralık' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' href='/kiralik' uipath-html-title='Kiralık' visibleinnertext='Kiralık' type='' class='' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Kiralık' check:text='Kiralık' /&gt;" Guid="a24d3bb0-f91c-4d70-b63b-6d0d34a496ab" InformativeScreenshot="e36b7754f098a67f421c3e92c7603878.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.sahibinden.com/kategori/emlak-konut' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                    </uix:NClick.Target>
+                                    <uix:NClick.VerifyOptions>
+                                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                        <uix:VerifyExecutionOptions.Retry>
+                                          <InArgument x:TypeArguments="x:Boolean" />
+                                        </uix:VerifyExecutionOptions.Retry>
+                                        <uix:VerifyExecutionOptions.Timeout>
+                                          <InArgument x:TypeArguments="x:Double" />
+                                        </uix:VerifyExecutionOptions.Timeout>
+                                      </uix:VerifyExecutionOptions>
+                                    </uix:NClick.VerifyOptions>
+                                  </uix:NClick>
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                            <Delay sap2010:Annotation.AnnotationText="Burada bekletmemin sebebi yukarıda reklam çıkıyor. Reklam boşluğu olunca aşağıya scroll oluyor ve aşağıdaki selektörü yakalayamıyor" Duration="00:00:10" sap:VirtualizedContainerService.HintSize="449.6,182.4" sap2010:WorkflowViewState.IdRef="Delay_1">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Delay>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'İl'" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="216d29a1-f655-4bbb-acd8-76c599b081d6" Timeout="10" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/kiralik" CVScreenId="3196e8ca-06e0-4e55-acfd-32657e7e4787" CvElementArea="256, 843, 215, 42" CvType="InputBox" DesignTimeRectangle="259, 845, 212, 39" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl visibleinnertext='?l' aaname='*?l' innertext='*?l' /&gt;" FuzzySelectorArgument="&lt;webctrl visibleinnertext='?l' aaname='*?l' innertext='*?l' tag='A' type='' class='faceted-select' check:text='İl' /&gt;" Guid="392386a8-76b9-40ec-a4bd-a10aacc73d3a" InformativeScreenshot="c67a08c3560f9b7e2924a0b7ad892592.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.sahibinden.com/kiralik' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                            </uix:NClick>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'İl Giriliyor'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="449.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="216d29a1-f655-4bbb-acd8-76c599b081d6" Text="[str_Il]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/kiralik" CVScreenId="4c9610ad-7098-414a-b713-10f73db77bd7" CvTextArea="280, 334, 11, 18" CvTextArgument="it" CvType="Text" DesignTimeRectangle="9, 117, 0, 0" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl type='text' placeholder='?l' tag='INPUT' parentclass='address-filter' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' placeholder='?l' tag='INPUT' parentclass='address-filter' class='js-address-filter' aaname='' /&gt;" Guid="b4a18caf-fb4b-4e0a-8357-e9cfea0d0258" InformativeScreenshot="c7f1ea46fcc21415acf0a6b2b8bfff1b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.sahibinden.com/kiralik' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.PointOffset>
+                                    <uix:PointOffset X="-2" Y="-2" />
+                                  </uix:TargetAnchorable.PointOffset>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.VerifyOptions>
+                                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                </uix:VerifyExecutionTypeIntoOptions>
+                              </uix:NTypeInto.VerifyOptions>
+                            </uix:NTypeInto>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'İl'" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_30" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="216d29a1-f655-4bbb-acd8-76c599b081d6" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/kiralik" CVScreenId="75931070-efb3-4856-bf01-1f52f4e80711" CvTextArea="272, 319, 47, 18" CvTextArgument="Elazig" CvType="Text" DesignTimeRectangle="9, 117, 0, 0" DesignTimeScaleFactor="1.25" ElementType="List" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}' innertext='{0}' visibleinnertext='{0}' /&gt;&quot;, str_Il)]" FuzzySelectorArgument="&lt;webctrl aaname='Elazığ' innertext='Elazığ' visibleinnertext='Elazığ' tag='A' type='' class='noChild single-selection' check:text='Elazığ' /&gt;" Guid="b263e080-136f-4275-8d63-43aae179e8e7" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.sahibinden.com/kiralik' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'İlçe'" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_31" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="216d29a1-f655-4bbb-acd8-76c599b081d6" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/kiralik" CVScreenId="f9fac629-97a5-4f1d-9ab8-6a8a188656c9" CvElementArea="257, 292, 215, 43" CvType="InputBox" DesignTimeRectangle="259, 293, 212, 40" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='?l?e' class='faceted-select' innertext='?l?e' uipath-html-title='İlçe' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='?l?e' class='faceted-select' innertext='?l?e' uipath-html-title='İlçe' tag='A' type='' check:text='İlçe' /&gt;" Guid="08725328-c035-42cd-ba72-8aa1a43dfa5d" InformativeScreenshot="6b5a0f030b13348ea18d50758bfcfc83.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.sahibinden.com/kiralik' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                            </uix:NClick>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'İlçe Giriliyor'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="449.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="216d29a1-f655-4bbb-acd8-76c599b081d6" Text="[str_Ilce]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/kiralik" CVScreenId="2a8adb6b-66e9-4db4-9f62-820b8ecf8d39" CvTextArea="281, 270, 28, 21" CvTextArgument="ilce" CvType="Text" DesignTimeRectangle="273, 258, 227, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl type='text' placeholder='?l?e' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' placeholder='?l?e' tag='INPUT' class='js-address-filter' aaname='' /&gt;" Guid="c9a4235a-bc06-4b01-9dd8-a0c6e3e58d72" InformativeScreenshot="e1859b324a5ecf1b3f3d1d70b6f2b884.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.sahibinden.com/kiralik' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.VerifyOptions>
+                                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                </uix:VerifyExecutionTypeIntoOptions>
+                              </uix:NTypeInto.VerifyOptions>
+                            </uix:NTypeInto>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'İlçe'" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_32" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="216d29a1-f655-4bbb-acd8-76c599b081d6" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/kiralik" CVScreenId="0bff46eb-0a91-410a-9400-9e78fc268cd6" CvElementArea="270, 359, 22, 21" CvTextArea="297, 361, 56, 15" CvTextArgument="Merkez" CvType="CheckBox" DesignTimeRectangle="9, 117, 0, 0" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}' innertext='{0}' /&gt;&quot;, str_Ilce)]" FuzzySelectorArgument="&lt;webctrl aaname='Merkez' innertext='Merkez' tag='A' type='' class='noChild facetedCheckbox' check:text='Merkez' /&gt;" Guid="c7cc98e0-2e0a-4597-89d8-58f30e76d431" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.sahibinden.com/kiralik' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close Window'" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_29" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="216d29a1-f655-4bbb-acd8-76c599b081d6" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/kiralik" CVScreenId="ebe0a141-33cb-4db7-aece-b46e7914c8d6" CvElementArea="512, 317, 30, 30" CvType="CloseButton" DesignTimeRectangle="513, 318, 28, 28" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl class='collapse-pane' parentid='searchResultLeft-address' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl class='collapse-pane' parentid='searchResultLeft-address' tag='A' type='' aaname='' /&gt;" Guid="54dd92a2-ac89-4f2f-a7b9-2eb0363fd605" InformativeScreenshot="edc277022ce0e5e4bcf1e2be15f90476.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.sahibinden.com/kiralik' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Minimum Değer'" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="216d29a1-f655-4bbb-acd8-76c599b081d6" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/kiralik" CVScreenId="e9fa2df3-35e9-40da-b6f0-7214b6caf7b2" CvElementArea="257, 341, 71, 43" CvType="InputBox" DesignTimeRectangle="259, 343, 68, 39" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='price_min' tag='INPUT' type='text' placeholder='min TL' /&gt;" FuzzySelectorArgument="&lt;webctrl name='price_min' tag='INPUT' type='text' placeholder='min TL' class='numericInput js-manual-search-input' aaname='' /&gt;" Guid="274e68dc-bdfc-4579-9ee7-9c6485a96227" InformativeScreenshot="80d07d375fd75c489dff486912d15ef1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.sahibinden.com/kiralik' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                            </uix:NClick>
+                            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Mınımum Deger'" sap:VirtualizedContainerService.HintSize="449.6,188" sap2010:WorkflowViewState.IdRef="TypeInto_5" Text="[str_MinimumDeger]">
+                              <ui:TypeInto.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b22d5fa1-7910-46cd-b0b9-de099a6b2350" InformativeScreenshot="87c184f8e8f6d1c7517b23a02df8785e" Selector="&lt;html app='chrome.exe' url='https://www.sahibinden.com/kiralik' /&gt;&lt;webctrl name='price_min' tag='INPUT' type='text' placeholder='min TL' /&gt;">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:TypeInto.Target>
+                            </ui:TypeInto>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Maximum Değer'" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="216d29a1-f655-4bbb-acd8-76c599b081d6" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/kiralik" CVScreenId="ee0b088f-25ee-4d13-b5de-3feaced13089" CvElementArea="339, 464, 73, 43" CvType="InputBox" DesignTimeRectangle="342, 343, 69, 39" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' placeholder='max TL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' placeholder='max TL' class='numericInput js-manual-search-input' aaname='' /&gt;" Guid="9096b203-6926-4528-ad95-62e475bd9048" InformativeScreenshot="993bf80c354b3085e679d69697867122.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.sahibinden.com/kiralik' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                            </uix:NClick>
+                            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="449.6,188" sap2010:WorkflowViewState.IdRef="TypeInto_6" Text="[str_MaksimumDeger]">
+                              <ui:TypeInto.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="91471a1e-3f88-4e4f-996b-6c6264df9cf7" InformativeScreenshot="d57e139068a0c9ffcd154340ba4c9d08" Selector="&lt;html app='chrome.exe' url='https://www.sahibinden.com/kiralik' /&gt;&lt;webctrl name='price_max' tag='INPUT' type='text' placeholder='max TL' /&gt;">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:TypeInto.Target>
+                            </ui:TypeInto>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Ara'" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="216d29a1-f655-4bbb-acd8-76c599b081d6" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/kiralik/adana-ceyhan?price_min=7000&amp;price_max=90000" CVScreenId="6b014093-3ca0-4739-a4d6-3cd6a64417f4" CvElementArea="414, 451, 56, 43" CvTextArea="429, 464, 27, 15" CvTextArgument="Ara" CvType="Button" DesignTimeRectangle="417, 452, 52, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' aaname='Ara' innertext='Ara' idx='*' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' aaname='Ara' innertext='Ara' type='' class='btn btn-link js-manual-search-button' check:text='Ara' /&gt;" Guid="0b928822-b527-4703-b246-b58eef91c0bb" InformativeScreenshot="8fb63762f756e1dc85f268601a339753.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.sahibinden.com/kiralik/adana-ceyhan?price_min=7000&amp;amp;price_max=90000' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                            </uix:NClick>
+                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'PageUp'" sap:VirtualizedContainerService.HintSize="449.6,189.6" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="pgup" KeyModifiers="None" SpecialKey="True">
+                              <ui:SendHotkey.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8e12adb2-0877-43c1-a482-d12620807872" InformativeScreenshot="4f6be791a1d0f3b5a66abffa814d2ee8" Selector="&lt;html app='chrome.exe' url='https://www.sahibinden.com/kiralik/*' /&gt;&lt;webctrl tag='BODY' css-selector='body' /&gt;" TimeoutMS="10000">
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:SendHotkey.Target>
+                            </ui:SendHotkey>
+                            <ui:UiElementExists DisplayName="Element Exists 'İlan Bulundu'" Exists="[ilan_Bulundu]" sap:VirtualizedContainerService.HintSize="449.6,139.2" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
+                              <ui:UiElementExists.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="82eca33e-0de1-4edc-8b47-f8a50eb48938" InformativeScreenshot="8120c9ae77a4803aca4c3871605c3b32" Selector="&lt;html app='chrome.exe' /&gt;&lt;webctrl aaname='bulundu.' tag='DIV' innertext='bulundu.' /&gt;">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:UiElementExists.Target>
+                            </ui:UiElementExists>
+                            <If Condition="[ilan_Bulundu]" DisplayName="If (İlan Bulunduysa ve Blunamadıysa Kontrolü)" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="If_3">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If.Then>
+                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,650.4" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_İlanlar]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='İlan Başlığı'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='m²(Brüt)'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Oda Sayısı'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Fiyat'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column4' Name='İlan Tarihi'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column5' Name='Semt/Mahalle'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='3' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='4' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='5' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='6' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column5' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='7' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="50" ScopeIdentifier="216d29a1-f655-4bbb-acd8-76c599b081d6" Version="V3">
+                                    <uix:NExtractData.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/kiralik/adana-ceyhan?sorting=price_asc&amp;price_min=7000&amp;price_max=90000" DesignTimeRectangle="511, 583, 1165, 2614" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl id='searchResultsTable' tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="99a96dc6-e2a9-42a9-bd2b-e3cd89f5f230" InformativeScreenshot="c89bc8e0320efd4a3d3e768f1bea9230.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ceyhan Kiralık Rezidans, Villa, Müstakil Ev ve Daireler - sahibinden.com' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                    </uix:NExtractData.Target>
+                                  </uix:NExtractData>
+                                  <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dt_İlanlar]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="353.6,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="[str_Ilanlar]" WorkbookPath="[str_ExcelPath]" />
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,176" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[dt_İlanlar]" />
+                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                                    <ui:CommentOut.Body>
+                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="sd:DataTable">[dt_İlanlar]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="sd:DataTable">[dt_İlanlar.AsEnumerable().OrderBy(Function(row) Convert.ToDouble(row("Fiyat").ToString().Replace(" TL", "").Replace(".", ","))).CopyToDataTable()]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                      </Sequence>
+                                    </ui:CommentOut.Body>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:CommentOut>
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,256" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,167.2" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Aradığınız kriterlere uygun ilan bulunamamıştır&quot;]" />
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Kiralık'" sap:VirtualizedContainerService.HintSize="449.6,216.8" sap2010:WorkflowViewState.IdRef="NClick_33" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="216d29a1-f655-4bbb-acd8-76c599b081d6" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/kiralik/elazig-merkez?price_min=5000&amp;price_max=40000" CVScreenId="b539be8e-573d-4abc-81a0-ea3aa1dda279" CvTextArea="456, 199, 42, 15" CvTextArgument="Kiralik" CvType="Text" DesignTimeRectangle="457, 199, 41, 17" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Kiral?k' parentid='searchContainer' tag='SPAN' innertext='Kiral?k' visibleinnertext='Kiral?k' idx='*' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Kiral?k' parentid='searchContainer' tag='SPAN' innertext='Kiral?k' visibleinnertext='Kiral?k' type='' class='' check:text='Kiralık' /&gt;" Guid="110c7343-d405-4e82-9588-1e59df5782cc" InformativeScreenshot="7f33e802c1f021c300d160a352437879.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.sahibinden.com/kiralik/elazig-merkez?price_min=5000&amp;amp;price_max=40000' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                            </uix:NClick>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEachRow.Body>
+                    </ui:ForEachRow>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="545.6,49.6" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,219.2" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:CloseWindow Selector="{x:Null}" TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="Close Window 'chrome.exe sahibinden.c...'" sap:VirtualizedContainerService.HintSize="353.6,130.4" sap2010:WorkflowViewState.IdRef="CloseWindow_1" InformativeScreenshot="c69b466c6e6e5b190a161ba2014c3a8c" WaitForReady="INTERACTIVE" />
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:CommentOut>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="3a77dda6ca410dc8f3302e3d04adc4b1.jpg" Selector="&lt;html app='chrome.exe' url='https://www.sahibinden.com/kategori/emlak-konut' /&gt;" Title="sahibinden.com - Türkiye'nin Online İlan ve Alışveriş Sitesi" Url="https://www.sahibinden.com/" />
+              </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
+          </Sequence>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+  </Sequence>
+</Activity>
